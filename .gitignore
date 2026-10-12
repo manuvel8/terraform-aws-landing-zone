@@ -1,0 +1,82 @@
+# -----------Terraform-------------
+# Local .terraform directories (downloaded providers and modules)
+**/.terraform/*
+
+#Terraform state files (may contain secrets, IDs and IPs)
+*.tfstate
+*.tfstate.*
+
+#Saved plan files and their JSON exports
+*.tfplan
+*.tfplan.json
+
+#Variable files (may contain sensitive values)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+#Crash logs
+crash.log
+crash.*.log
+
+#Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+#Terraform CLI config
+.terraformrc
+terraform.rc
+
+# -------------Cloud credentials----------
+.aws/
+credentials
+*.credentials
+kubeconfig
+*.kubeconfig
+
+#-------------Keys and certificates-------
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+
+#------------Environment and secret files---- 
+.env
+.env.*
+!.env.example
+secrets/
+*.secret
+
+#------------Build artifacts-----------------
+*.zip
+*.log
+
+#------------OS and editor files------------
+.DS_Store
+Thums.db
+.vscode/
+.idea/
+*.swp
+
+# ---------- Terraform lock info ----------
+.terraform.tfstate.lock.info
+
+# ---------- VPN and remote access ----------
+*.ovpn
+*.conf.vpn
+*.rdp
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---------- Node and Helm ----------
+node_modules/
+*.tgz
